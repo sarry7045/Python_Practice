@@ -1,0 +1,6 @@
+pip install virtualenv
+virtualenv .venv
+python -m venv .venv   -   Basically it's create one type of Virtual machine, we can install anything in this folder
+pip list
+python -m pip install Django
+pip list
