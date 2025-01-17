@@ -10,7 +10,7 @@ def timer(func):
         return result
     return wrapper
 
-@timer     # Decorator - Means jab bhi iss function ko chalna hoga woh iss function se hoke he gujreja
+@timer     # Decorator - Means jab bhi iss function ko chalna hoga woh iss function se hoke he gujrega
 def example_function(n):
     time.sleep(n)
 

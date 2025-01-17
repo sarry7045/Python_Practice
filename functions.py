@@ -19,7 +19,7 @@ print(cube(3))
 
 
 # 4
-def summ_all(*args): # * means it's ready for the multiple arguments
+def summ_all(*args): # *args means it's ready for the multiple arguments
     return sum(args)
 print(summ_all(1,2))
 print(summ_all(1,2,3,4))
@@ -38,7 +38,7 @@ print_kwargs(name = "Suraj", surname= "Yadav", adress= "Mumbai")
 # 6
 def even_generator (limit):
     for i in range(2, limit + 1, 2):
-        yield i        # yield is use for ki, function pichla value kya return kiya the woh memory me save krke rakhata hai
+        yield i        # yield is use for - function pichla value kya return kiya the woh memory me save krke rakhata hai
          
 for  num in even_generator(10):
     print("num", num)
