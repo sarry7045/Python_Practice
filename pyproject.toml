@@ -1,0 +1,19 @@
+# pyproject.toml
+
+[tool.poetry]
+name = "weather-app"
+version = "0.1.0"
+description = "A simple weather forecasting CLI"
+authors = ["Suraj Yadav <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.32.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.0"
+black = "^24.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

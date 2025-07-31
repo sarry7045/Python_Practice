@@ -1,6 +1,26 @@
 import time
 
+
 # 1
+def greet_decorator(func):
+    def wrapper():
+        print("Hello!")
+        func()
+        print("Goodbye!")
+    return wrapper
+
+@greet_decorator
+def say_name():
+    print("My name is Suraj")
+
+say_name()
+# Equivalent Without @ Syntax
+# say_name = greet_decorator(say_name)
+# say_name()
+
+
+
+# 2
 def timer(func):
     def wrapper(*args, **kwargs):
         start = time.time()
@@ -18,7 +38,7 @@ example_function(2)
 
 
 
-# 2
+# 3
 def cache(func):
     cache_value = {}
     print(cache_value)

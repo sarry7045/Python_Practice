@@ -2,5 +2,7 @@
 # Means : Tuple k main variable ko hum change nhi krr sakte and List k main reference ko hum change kar sakte hai
 
 values = ["A", "B", "C"]
-values[0] = "D"
-print[values] # we can't change like this in Tuple
+values[0] = "D" # we can't change like this in Tuple
+print(values)
+
+abc = ("School", 2000)
